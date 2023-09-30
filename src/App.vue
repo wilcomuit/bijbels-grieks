@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, type Ref } from 'vue'
 import { useGreekPracticeStore } from './stores/practice'
 import { useStateStore } from './stores/state';
 
@@ -37,6 +37,7 @@ const questionPrefix = computed(() => {
 })
 
 const showAnswer = () => {
+  if (hideAnswer.value) useGreekPracticeStore().addHintCount()
   hideAnswer.value = false
 }
 
@@ -65,6 +66,7 @@ const showAnswer = () => {
       <p style="margin-top:15px;">Klik op enter om naar de volgende vraag te gaan.</p>
       <p>Goede antwoorden: <span style="color: green;">{{  useGreekPracticeStore().correctAnswerCount }}</span></p>
       <p>Foute antwoorden: <span style="color: red;">{{  useGreekPracticeStore().wrongAnswerCount }}</span></p>
+      <p>Hints getoond: {{  useGreekPracticeStore().hintCount }}</p>
     </div>
 
     <span v-if="false" style="color: green;">✔</span>
@@ -76,6 +78,7 @@ const showAnswer = () => {
       <h1>Ga terug naar het menu om opnieuw te oefenen.</h1>
       <h2>Goede antwoorden: <span style="color: green;">{{  useGreekPracticeStore().correctAnswerCount }}</span></h2>
       <h2>Foute antwoorden: <span style="color: red;">{{  useGreekPracticeStore().wrongAnswerCount }}</span></h2>
+      <h2>Hints getoond: {{  useGreekPracticeStore().hintCount }}</h2>
     </div>
     <button class="menu-button" @click="returnToMenu()">Terug naar menu</button>
 

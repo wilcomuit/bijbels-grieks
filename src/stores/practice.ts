@@ -23,6 +23,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
 
   let wrongAnswerCount = ref(0)
   let correctAnswerCount = ref(0)
+  let hintCount = ref(0)
 
   const toggleLesson = (lessonName: string, lesson: any) => {
     const foundIndex = selectedLessons.value.findIndex((lesson: string) => lesson === lessonName)
@@ -40,8 +41,14 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     questions.value = []
     wrongAnswerCount.value = 0
     correctAnswerCount.value = 0
+    hintCount.value = 0
+
     selectedLessons.value = []
 
+  }
+
+  function addHintCount() {
+    hintCount.value++
   }
 
   function getNextRandomQuestion() {
@@ -65,5 +72,5 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     getNextRandomQuestion()
   }
 
-  return { questions, currentQuestion, wrongAnswerCount, correctAnswerCount, selectedLessons, lessons, toggleLesson, addQuestions, resetQuestions, getNextRandomQuestion, submitAnswer }
+  return { questions, currentQuestion, wrongAnswerCount, correctAnswerCount, selectedLessons, lessons, hintCount, addHintCount, toggleLesson, addQuestions, resetQuestions, getNextRandomQuestion, submitAnswer }
 })
