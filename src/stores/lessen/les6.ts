@@ -7,13 +7,13 @@ const les6 = [
     },
     {
       question: "Ἰησοῦς",
-      answers: ["Jezus", "jezus"],
+      answers: ["Jezus"],
       explanation: "Jezus",
       type: "woordenschat"
     },
     {
       question: "Ἰακωβος",
-      answers: ["Jakobus", "jakobus"],
+      answers: ["Jakobus"],
       explanation: "Jakobus",
       type: "woordenschat"
     },

@@ -13,25 +13,25 @@ const les5 = [
     },
     {
       question: "Ἰσραήλ",
-      answers: ["Israël", "israël", "Israel", "israel"],
+      answers: ["Israël", "Israel"],
       explanation: "Israël (mannelijk voornaamwoord, kan niet verbogen worden)",
       type: "woordenschat"
     },
     {
       question: "Ἰουδαῖος",
-      answers: ["Jood", "jood"],
+      answers: ["Jood"],
       explanation: "Jood (lid van de stam van Juda)",
       type: "woordenschat"
     },
     {
       question: "Φαρισαῖος",
-      answers: ["Farizeeër", "farizeeër", "Farizeeer", "farizeeer"],
+      answers: ["Farizeeër", "Farizeeer"],
       explanation: "Farizeeër",
       type: "woordenschat"
     },
     {
       question: "Χριστός",
-      answers: ["Christus", "christus"],
+      answers: ["Christus"],
       explanation: "Christus (Hebreeuws: Messias, d.i. de gezalfde)",
       type: "woordenschat"
     },
@@ -103,7 +103,7 @@ const les5 = [
     },
     {
       question: "κύριος",
-      answers: ["heer", "de Heer", "de heer"],
+      answers: ["heer", "de Heer"],
       explanation: "heer, de Heer (in de Septuagint gebruikt in plaats van JHWH)",
       type: "woordenschat"
     },
