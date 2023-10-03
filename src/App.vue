@@ -58,9 +58,10 @@ const showAnswer = () => {
 
     <div class="question-block">
       <h1 v-if="questionPrefix"> {{  questionPrefix }}</h1>
-      <h2 class="question" @click="showAnswer()">{{  useGreekPracticeStore().currentQuestion.question }}  </h2> 
-      <input ref="answerInput" type="text" @keyup.enter="inputAnswer()"/>
-      <p v-show="!hideAnswer" class="answer">
+      <h2 class="question">{{  useGreekPracticeStore().currentQuestion.question }}  </h2> 
+      <input  ref="answerInput" type="text" @keyup.enter="inputAnswer()"/>
+      <p v-if="hideAnswer" class="answer" @click="showAnswer()">Toon antwoord</p>
+      <p v-else class="answer">
         {{ useGreekPracticeStore().currentQuestion.explanation }}
       </p>
       <p style="margin-top:15px;">Klik op enter om naar de volgende vraag te gaan.</p>
@@ -112,9 +113,11 @@ const showAnswer = () => {
     margin-bottom:30px;
   }
   .answer {
+    border: 1px solid black;
+    margin-top:20px;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 350px;
   }
 }
 .menu-button {
