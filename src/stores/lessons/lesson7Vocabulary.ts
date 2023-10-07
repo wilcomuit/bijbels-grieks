@@ -1,4 +1,4 @@
-const les7 = [
+const questions: Array<QuestionType> = [
     {
       question: "ἀργύριον",
       answers: ["zilver", "geld"],
@@ -125,5 +125,11 @@ const les7 = [
       explanation: "Jeruzalem (de Hebreeuwse vorm, vrouwelijk enkelvoud, onverbogen)",
       type: "woordenschat"
     }
-  ]
-export default les7
+]
+const lesson7Vocabulary = {
+  id: 'lesson7-vocabulary',
+  name: 'Les 7 – Woordenschat', 
+  active: false,
+  questions
+}
+export default lesson7Vocabulary

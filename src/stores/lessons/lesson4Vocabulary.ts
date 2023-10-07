@@ -1,4 +1,4 @@
-const les4 = [
+const questions: Array<QuestionType> = [
     {
       question: "αἰτέω",
       answers: ["ik vraag"],
@@ -77,5 +77,11 @@ const les4 = [
       explanation: "ik hou van, ik heb lief (filantroop, filatelist, filologie, filosofie, xenofilie)",
       type: "woordenschat"
     }
-  ]
-export default les4
+]
+const lesson4Vocabulary = {
+  id: 'lesson4-vocabulary',
+  name: 'Les 4 – Woordenschat', 
+  active: false,
+  questions
+}
+export default lesson4Vocabulary

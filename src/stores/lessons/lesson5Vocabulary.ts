@@ -1,4 +1,4 @@
-const les5 = [
+const questions: Array<QuestionType> = [
     {
       question: "ὦ",
       answers: ["o!", "o"],
@@ -179,5 +179,11 @@ const les5 = [
       explanation: "vrees (fobie, xenofobie)",
       type: "woordenschat"
     }
-  ]
-export default les5
+]
+const lesson5Vocabulary = {
+  id: 'lesson5-vocabulary',
+  name: 'Les 5 – Woordenschat', 
+  active: false,
+  questions
+}
+export default lesson5Vocabulary

@@ -1,4 +1,4 @@
-const les6 = [
+const questions: Array<QuestionType> = [
     {
       question: "ἐστί(ν)",
       answers: ["is"],
@@ -149,5 +149,11 @@ const les6 = [
       explanation: "maagd (parthenogenese = maagdelijke geboorte)",
       type: "woordenschat"
     }
-  ]
-export default les6
+]
+const lesson6Vocabulary = {
+  id: 'lesson6-vocabulary',
+  name: 'Les 6 – Woordenschat', 
+  active: false,
+  questions
+}
+export default lesson6Vocabulary

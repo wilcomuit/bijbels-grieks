@@ -1,4 +1,4 @@
-const les3 = [
+const questions: Array<QuestionType> = [
     {
       question: "βάλλω",
       answers: ["ik werp"],
@@ -95,5 +95,11 @@ const les3 = [
       explanation: "ik red (soteriologie)",
       type: "woordenschat"
     }
-  ]
-export default les3
+]
+const lesson3Vocabulary = {
+    id: 'lesson3-vocabulary',
+    name: 'Les 3 – Woordenschat', 
+    active: false,
+    questions
+}
+export default lesson3Vocabulary
