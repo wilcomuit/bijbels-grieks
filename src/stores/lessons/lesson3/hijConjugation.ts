@@ -12,7 +12,7 @@ const questions: Array<QuestionType> = [
       type: "woordenschat"
     },
     {
-      question: "γινώσκω",
+      question: "γινώσκει",
       answers: ["hij weet", "zij weet", "het weet", "hij kent", "zij kent", "het kent"],
       explanation: "hij/zij/het weet, hij/zij/het kent (gnostisch, gnosis)",
       type: "woordenschat"

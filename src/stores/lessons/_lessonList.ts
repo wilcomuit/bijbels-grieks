@@ -1,16 +1,15 @@
 import lesson3HijConjugation from "./lesson3/hijConjugation";
-import lesson3JijConjugation from "./lesson3/lesson3JijConjugation";
-import lesson3JullieConjugation from "./lesson3/lesson3JullieConjugation";
-import lesson3Vocabulary from "./lesson3/lesson3Vocabulary";
-import lesson3VocabularyQuestions from "./lesson3/lesson3VocabularyQuestions";
-import lesson3WijConjugation from "./lesson3/lesson3WijConjugation";
-import lesson3ZijConjugation from "./lesson3/lesson3ZijConjugation";
+import lesson3JijConjugation from "./lesson3/jijConjugation"
+import lesson3JullieConjugation from "./lesson3/jullieConjugation";
+import lesson3Vocabulary from "./lesson3/vocabulary";
+import lesson3VocabularyQuestions from "./lesson3/vocabularyQuestions";
+import lesson3WijConjugation from "./lesson3/wijConjugation";
+import lesson3ZijConjugation from "./lesson3/zijConjugation";
 import lesson4Vocabulary from "./lesson4Vocabulary";
 import lesson4VocabularyQuestions from "./lesson4VocabularyQuestions";
 import lesson5Vocabulary from "./lesson5Vocabulary";
 import lesson6Vocabulary from "./lesson6Vocabulary";
 import lesson7Vocabulary from "./lesson7Vocabulary";
-
 
 export default function lessonList() {
     return [ 

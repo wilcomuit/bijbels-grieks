@@ -79,7 +79,7 @@ const questions: Array<QuestionType> = [
     },
     {
       question: "μένεις",
-      answers: ["jij blijf", "u blijft", "jij begeleidt", "u begeleidt", "jij houdt een optocht", "u houdt een optocht"],
+      answers: ["jij blijft", "u blijft", "jij begeleidt", "u begeleidt", "jij houdt een optocht", "u houdt een optocht"],
       explanation: "jij/u blijf, jij/u begeleidt, jij/u houdt een optocht (Eng.: I remain)",
       type: "woordenschat"
     },
