@@ -14,11 +14,11 @@ import lesson7Vocabulary from "./lesson7Vocabulary";
 export default function lessonList() {
     return [ 
         lesson3Vocabulary,
-        lesson3JijConjugation,
-        lesson3HijConjugation,
-        lesson3WijConjugation,
-        lesson3JullieConjugation,
-        lesson3ZijConjugation,
+        //lesson3JijConjugation,
+        //lesson3HijConjugation,
+        //lesson3WijConjugation,
+        //lesson3JullieConjugation,
+        //lesson3ZijConjugation,
         //lesson3VocabularyQuestions,
         lesson4Vocabulary,
         //lesson4VocabularyQuestions,

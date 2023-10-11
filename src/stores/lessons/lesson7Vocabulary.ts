@@ -62,7 +62,7 @@ const questions: Array<QuestionType> = [
     {
       question: "παιδίον",
       answers: ["kind"],
-      explanation: "kind (pedagogie, pediatrisch) (-ιον beantwoordt aan de Nederlandse uitgan -je, maar vaak is er geen betekenis van verkleiningsvorm)",
+      explanation: "kind (pedagogie, pediatrisch) (-ιον beantwoordt aan de Nederlandse uitgang -je, maar vaak is er geen betekenis van verkleiningsvorm)",
       type: "woordenschat"
     },
     {
