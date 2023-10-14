@@ -38,7 +38,7 @@ const showAnswer = () => {
       <input  ref="answerInput" type="text" @keyup.enter="inputAnswer()"/>
       <p v-if="hideAnswer" class="answer" @click="showAnswer()">Toon antwoord</p>
       <p v-else class="answer">
-        {{ useGreekPracticeStore().currentQuestion.explanation }}
+        {{ useGreekPracticeStore().currentQuestion.answers.join(', ') }} {{ useGreekPracticeStore().currentQuestion.explanation }}
       </p>
       <p style="margin-top:15px;">Klik op enter om naar de volgende vraag te gaan.</p>
       <p>Goede antwoorden: <span style="color: green;">{{  useGreekPracticeStore().correctAnswerCount }}</span> / {{ useGreekPracticeStore().totalCount }}</p>

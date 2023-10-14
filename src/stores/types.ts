@@ -8,6 +8,6 @@ type LessonType = {
 type QuestionType = {
     question: string
     answers: Array<string>
-    explanation: string
+    explanation?: string
     type: string
 }

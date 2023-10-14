@@ -41,12 +41,11 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     if (questions.value.length === 0) return false
     const index = Math.floor(Math.random() * questions.value.length)
     currentQuestion.value = questions.value[index]
-    currentQuestion.value.answers = currentQuestion.value.answers.map((answer:string) => answer.toLowerCase())
     return currentQuestion.value
   }
 
   function submitAnswer(answer: string) {
-    if (currentQuestion.value.answers.includes(answer)) {
+    if (currentQuestion.value.answers.map((answer:string) => answer.toLowerCase()).includes(answer)) {
       correctAnswerCount.value++
       if (useStateStore().options.deleteAfterSuccess === true) {
         questions.value = questions.value.filter((question: any) => question.question !== currentQuestion.value.question)

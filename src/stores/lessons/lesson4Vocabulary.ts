@@ -2,79 +2,76 @@ const questions: Array<QuestionType> = [
     {
       question: "αἰτέω",
       answers: ["ik vraag"],
-      explanation: "ik vraag",
       type: "woordenschat"
     },
     {
       question: "βλασφημέω",
       answers: ["ik laster", "ik laster God"],
-      explanation: "ik laster (God) (vgl. blasfemeren)",
+      explanation: "(vgl. blasfemeren)",
       type: "woordenschat"
     },
     {
       question: "εὐλογέω",
       answers: ["ik zegen"],
-      explanation: "ik zegen (εὐ = goed + λέγω = ik zeg)",
+      explanation: "(εὐ = goed + λέγω = ik zeg)",
       type: "woordenschat"
     },
     {
       question: "ζητέω",
       answers: ["ik zoek"],
-      explanation: "ik zoek",
       type: "woordenschat"
     },
     {
       question: "θεωρέω",
       answers: ["ik kijk", "ik zie"],
-      explanation: "ik kijk, ik zie (theorie, theoretisch)",
+      explanation: "(theorie, theoretisch)",
       type: "woordenschat"
     },
     {
       question: "καλέω",
       answers: ["ik roep"],
-      explanation: "ik roep (kallen, Eng. I call)",
+      explanation: "(kallen, Eng. I call)",
       type: "woordenschat"
     },
     {
       question: "λαλέω",
       answers: ["ik spreek"],
-      explanation: "ik spreek (lallen, lollen)",
+      explanation: "(lallen, lollen)",
       type: "woordenschat"
     },
     {
       question: "μαρτυρέω",
       answers: ["ik getuig"],
-      explanation: "ik getuig (martelaar, martyrologie)",
+      explanation: "(martelaar, martyrologie)",
       type: "woordenschat"
     },
     {
       question: "μετανοέω",
       answers: ["ik heb berouw", "ik kom tot andere gedachten"],
-      explanation: "ik heb berouw, ik kom tot andere gedachten (metanoëtisch, metanoia)",
+      explanation: "(metanoëtisch, metanoia)",
       type: "woordenschat"
     },
     {
       question: "μισέω",
       answers: ["ik haat"],
-      explanation: "ik haat (misantroop, misogyn)",
+      explanation: "(misantroop, misogyn)",
       type: "woordenschat"
     },
     {
       question: "ποιέω",
       answers: ["ik doe", "ik maak"],
-      explanation: "ik doe, ik maak (poëzie)",
+      explanation: "(poëzie)",
       type: "woordenschat"
     },
     {
       question: "τηρέω",
       answers: ["ik onderhoud"],
-      explanation: "ik onderhoud",
       type: "woordenschat"
     },
     {
       question: "φιλέω",
       answers: ["ik hou van", "ik heb lief"],
-      explanation: "ik hou van, ik heb lief (filantroop, filatelist, filologie, filosofie, xenofilie)",
+      explanation: "(filantroop, filatelist, filologie, filosofie, xenofilie)",
       type: "woordenschat"
     }
 ]

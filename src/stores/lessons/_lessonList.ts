@@ -10,6 +10,8 @@ import lesson4VocabularyQuestions from "./lesson4VocabularyQuestions";
 import lesson5Vocabulary from "./lesson5Vocabulary";
 import lesson6Vocabulary from "./lesson6Vocabulary";
 import lesson7Vocabulary from "./lesson7Vocabulary";
+import lesson8Vocabulary from "./lesson8Vocabulary";
+import lesson9Vocabulary from "./lesson9Vocabulary";
 
 export default function lessonList() {
     return [ 
@@ -24,6 +26,8 @@ export default function lessonList() {
         //lesson4VocabularyQuestions,
         lesson5Vocabulary,
         lesson6Vocabulary,
-        lesson7Vocabulary
+        lesson7Vocabulary,
+        lesson8Vocabulary,
+        lesson9Vocabulary,
     ]
 }
