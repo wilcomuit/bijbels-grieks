@@ -96,9 +96,10 @@ const questions: Array<QuestionType> = [
       type: "woordenschat"
     }
 ]
-const lesson3WijConjugation = {
+const lesson3WijConjugation: LessonType = {
     id: 'lesson3-wij-conjugation',
-    name: 'Les 3 – Wij vervoegingen', 
+    name: 'Les 3 – Wij vervoegingen',
+    type: 'woordenschat',
     active: false,
     questions
 }

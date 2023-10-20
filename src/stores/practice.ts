@@ -7,6 +7,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   //const fonts = ['deja-vu-font', 'open-sans-font', 'ubuntu-font']
   //const font: Ref<string> = ref('ubuntu-font')
 
+  const conjugationTypes = ['ev_nominatief', 'ev_accusatief', 'ev_genitief', 'ev_datief', 'mv_nominatief', 'mv_accusatief', 'mv_genitief', 'mv_datief']
   let questions: Ref<Array<any>> = ref([])
   let currentQuestion: Ref<any> = ref({})
 
@@ -18,7 +19,36 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
 
   function startPractice() {
     for (const lesson of useLessonsStore().getActiveLessons()) {
-      questions.value = [...questions.value, ...lesson.questions]
+      if (lesson.type === 'vervoeging') {
+        for (const question of lesson.questions as Array<ConjugationQuestionType>) {
+          if (useStateStore().options.allConjugations) {
+            const results: Array<any> = []
+            for (const [key, value] of Object.entries(question)) {
+              if (key === 'type') continue
+              const foundResult = results.find((r: any) => r.question === value)
+              if (foundResult) foundResult.answers.push(key)
+              else results.push({
+                question: value,
+                answers: [key],
+                type: question.type
+              })
+            }
+            questions.value = [...questions.value, ...results]
+          } else {
+            const conjugationIndex = Math.floor(Math.random() * conjugationTypes.length)
+            // @ts-ignore
+            const chosenConjugation: string = question[conjugationTypes[conjugationIndex]]
+
+            questions.value = [...questions.value, {
+              question: chosenConjugation,
+              answers: getAllConjugationAnswers(question, chosenConjugation),
+              type: question.type
+            }]
+
+          }
+        }
+        
+      } else questions.value = [...questions.value, ...lesson.questions]
     }
     totalCount.value = questions.value.length
     getNextRandomQuestion()
@@ -40,8 +70,17 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   function getNextRandomQuestion() {
     if (questions.value.length === 0) return false
     const index = Math.floor(Math.random() * questions.value.length)
-    currentQuestion.value = questions.value[index]
+    const question = questions.value[index]
+    currentQuestion.value = question
     return currentQuestion.value
+  }
+
+  function getAllConjugationAnswers(question: ConjugationQuestionType, chosenAnswer: string) {
+    const results = []
+    for (const [key, value] of Object.entries(question)) {
+      if (value === chosenAnswer) results.push(key)
+    }
+    return results
   }
 
   function submitAnswer(answer: string) {
@@ -50,13 +89,10 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
       if (useStateStore().options.deleteAfterSuccess === true) {
         questions.value = questions.value.filter((question: any) => question.question !== currentQuestion.value.question)
       }
-      if (questions.value.length === 0) useStateStore().setState('endScreen')
     } else {
       wrongAnswerCount.value++
-      questions.value.push(currentQuestion.value)
     }
-    //const index = Math.floor(Math.random() * 3)
-    //font.value = fonts[index]
+    if (questions.value.length === 0) useStateStore().setState('endScreen')
     getNextRandomQuestion()
   }
 

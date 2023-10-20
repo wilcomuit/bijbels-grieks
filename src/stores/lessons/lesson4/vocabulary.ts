@@ -75,9 +75,10 @@ const questions: Array<QuestionType> = [
       type: "woordenschat"
     }
 ]
-const lesson4Vocabulary = {
+const lesson4Vocabulary: LessonType = {
   id: 'lesson4-vocabulary',
-  name: 'Les 4 – Woordenschat', 
+  name: 'Les 4 – Woordenschat',
+  type: 'woordenschat', 
   active: false,
   questions
 }

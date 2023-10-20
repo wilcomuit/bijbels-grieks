@@ -12,7 +12,6 @@ export const useLessonsStore = defineStore('lessons', () => {
     }
 
     const getActiveLessons = () => {
-        console.log(lessons.value.filter((l: LessonType) => l.active === true).length)
         return lessons.value.filter((l: LessonType) => l.active === true)
     }
 
