@@ -11,7 +11,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ἀρχή",
+      ev_nominatief: "ἀρχη",
       ev_accusatief: "ἀρχη",
       ev_genitief: "ἀρχης",
       ev_datief: "ἀρχῃ",
@@ -22,7 +22,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "γῆ",
+      ev_nominatief: "γη",
       ev_accusatief: "γη",
       ev_genitief: "γης",
       ev_datief: "γῃ",
@@ -33,7 +33,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "γραφή",
+      ev_nominatief: "γραφη",
       ev_accusatief: "γραφη",
       ev_genitief: "γραφης",
       ev_datief: "γραφῃ",
@@ -55,7 +55,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "διδαχή",
+      ev_nominatief: "διδαχη",
       ev_accusatief: "διδαχη",
       ev_genitief: "διδαχης",
       ev_datief: "διδαχῃ",
@@ -88,7 +88,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ἐντολή",
+      ev_nominatief: "ἐντολη",
       ev_accusatief: "ἐντολη",
       ev_genitief: "ἐντολης",
       ev_datief: "ἐντολῃ",
@@ -99,7 +99,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ἐπιστολή",
+      ev_nominatief: "ἐπιστολη",
       ev_accusatief: "ἐπιστολη",
       ev_genitief: "ἐπιστολης",
       ev_datief: "ἐπιστολῃ",
@@ -110,7 +110,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ζωή",
+      ev_nominatief: "ζωη",
       ev_accusatief: "ζωη",
       ev_genitief: "ζωης",
       ev_datief: "ζωῃ",
@@ -121,7 +121,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "κεφαλή",
+      ev_nominatief: "κεφαλη",
       ev_accusatief: "κεφαλη",
       ev_genitief: "κεφαλης",
       ev_datief: "κεφαλῃ",
@@ -154,7 +154,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ὀργή",
+      ev_nominatief: "ὀργη",
       ev_accusatief: "ὀργη",
       ev_genitief: "ὀργης",
       ev_datief: "ὀργῃ",
@@ -165,7 +165,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "παραβολή",
+      ev_nominatief: "παραβολη",
       ev_accusatief: "παραβολη",
       ev_genitief: "παραβολης",
       ev_datief: "παραβολῃ",
@@ -176,7 +176,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "προσευχή",
+      ev_nominatief: "προσευχη",
       ev_accusatief: "προσευχη",
       ev_genitief: "προσευχης",
       ev_datief: "προσευχῃ",
@@ -187,7 +187,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "συναγωγή",
+      ev_nominatief: "συναγωγη",
       ev_accusatief: "συναγωγη",
       ev_genitief: "συναγωγης",
       ev_datief: "συναγωγῃ",
@@ -198,7 +198,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "τιμή",
+      ev_nominatief: "τιμη",
       ev_accusatief: "τιμη",
       ev_genitief: "τιμης",
       ev_datief: "τιμῃ",
@@ -209,7 +209,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ὑπομονή",
+      ev_nominatief: "ὑπομονη",
       ev_accusatief: "ὑπομονη",
       ev_genitief: "ὑπομονης",
       ev_datief: "ὑπομονῃ",
@@ -220,7 +220,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "φυλακή",
+      ev_nominatief: "φυλακη",
       ev_accusatief: "φυλακη",
       ev_genitief: "φυλακης",
       ev_datief: "φυλακῃ",
@@ -231,7 +231,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "φωνή",
+      ev_nominatief: "φωνη",
       ev_accusatief: "φωνη",
       ev_genitief: "φωνης",
       ev_datief: "φωνῃ",
@@ -242,7 +242,7 @@ const questions: Array<ConjugationQuestionType> = [
       type: "vervoeging"
     },
     {
-      ev_nominatief: "ψυχή",
+      ev_nominatief: "ψυχη",
       ev_accusatief: "ψυχη",
       ev_genitief: "ψυχης",
       ev_datief: "ψυχῃ",
