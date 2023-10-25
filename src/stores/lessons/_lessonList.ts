@@ -21,6 +21,11 @@ import lesson8Vocabulary from "./lesson8/vocabulary";
 import lesson9Vocabulary from "./lesson9/vocabulary";
 import lesson8Conjugations from "./lesson8/conjugations";
 import lesson9Conjugations from "./lesson9/conjugations";
+import lesson6Articles from "./lesson6/articles";
+import lesson7Articles from "./lesson7/articles";
+import lesson8Articles from "./lesson8/articles";
+import lesson10Vocabulary from "./lesson10/vocabulary";
+import lesson11Vocabulary from "./lesson11/vocabulary";
 
 export default function lessonList() {
     return [ 
@@ -41,11 +46,16 @@ export default function lessonList() {
         lesson5Conjugations,
         lesson6Vocabulary,
         lesson6Conjugations,
+        lesson6Articles,
         lesson7Vocabulary,
         lesson7Conjugations,
+        lesson7Articles,
         lesson8Vocabulary,
         lesson8Conjugations,
+        lesson8Articles,
         lesson9Vocabulary,
         lesson9Conjugations,
+        lesson10Vocabulary,
+        lesson11Vocabulary,
     ]
 }
