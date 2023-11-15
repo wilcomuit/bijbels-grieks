@@ -26,6 +26,7 @@ import lesson7Articles from "./lesson7/articles";
 import lesson8Articles from "./lesson8/articles";
 import lesson10Vocabulary from "./lesson10/vocabulary";
 import lesson11Vocabulary from "./lesson11/vocabulary";
+import lesson12Vocabulary from "./lesson12/vocabulary";
 
 export default function lessonList() {
     return [ 
@@ -57,5 +58,6 @@ export default function lessonList() {
         lesson9Conjugations,
         lesson10Vocabulary,
         lesson11Vocabulary,
+        lesson12Vocabulary,
     ]
 }
