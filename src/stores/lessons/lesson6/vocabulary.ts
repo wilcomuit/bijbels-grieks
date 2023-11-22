@@ -1,7 +1,7 @@
 const questions: Array<QuestionType> = [
     {
       question: "ἐστί(ν)",
-      answers: ["is"],
+      answers: ["is", "hij is", "ze is", "het is"],
       type: "woordenschat"
     },
     {
@@ -94,7 +94,7 @@ const questions: Array<QuestionType> = [
     },
     {
       question: "πειρασμός",
-      answers: ["bekoring"],
+      answers: ["bekoring", "verzoeking"],
       type: "woordenschat"
     },
     {

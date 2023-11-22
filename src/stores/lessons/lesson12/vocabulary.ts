@@ -105,6 +105,33 @@ const questions: Array<QuestionType> = [
       answers: ["ik ben"],
       explanation: "(vgl. Engels: I am)",
       type: "woordenschat"
+    },
+    {
+      question: "εἶ",
+      answers: ["je bent", "u bent"],
+      type: "woordenschat"
+    },
+    {
+      question: "ἐστίν",
+      answers: ["is", "hij is", "ze is", "het is"],
+      explanation: "(Ook wel: ἐστί)",
+      type: "woordenschat"
+    },
+    {
+      question: "ἐσμέν",
+      answers: ["we zijn"],
+      type: "woordenschat"
+    },
+    {
+      question: "ἐστέ",
+      answers: ["jullie zijn"],
+      type: "woordenschat"
+    },
+    {
+      question: "εἰσίν",
+      answers: ["ze zijn", "zij zijn"],
+      explanation: "(Ook wel: εἰσί)",
+      type: "woordenschat"
     }
 ]
 const lesson12Vocabulary: LessonType = {
