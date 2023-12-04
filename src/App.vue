@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import Menu from './views/Menu.vue'
 import EndScreen from './views/EndScreen.vue'
-import Practice from './views/Practice.vue'
+import Practice from './views/practice/Practice.vue'
 import { useStateStore } from './stores/state';
 </script>
 

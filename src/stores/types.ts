@@ -10,6 +10,8 @@ type QuestionType = {
     question: string
     answers: Array<string>
     explanation?: string
+    correctOptions?: Array<string>
+    wrongOptions?: Array<string>
     type: string
 }
 

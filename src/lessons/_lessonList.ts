@@ -13,6 +13,7 @@ import lesson4WijConjugation from "./lesson4/wijConjugation";
 import lesson4ZijConjugation from "./lesson4/zijConjugation";
 import lesson5Vocabulary from "./lesson5/vocabulary";
 import lesson5Conjugations from "./lesson5/conjugations";
+import lesson5Sentences from '@/lessons/lesson5/sentences'
 import lesson6Vocabulary from "./lesson6/vocabulary";
 import lesson6Conjugations from "./lesson6/conjugations";
 import lesson7Vocabulary from "./lesson7/vocabulary";
@@ -27,9 +28,10 @@ import lesson8Articles from "./lesson8/articles";
 import lesson10Vocabulary from "./lesson10/vocabulary";
 import lesson11Vocabulary from "./lesson11/vocabulary";
 import lesson12Vocabulary from "./lesson12/vocabulary";
-
+import lesson13Vocabulary from '@/lessons/lesson13/vocabulary'
+import lesson14Vocabulary from '@/lessons/lesson14/vocabulary'
 export default function lessonList() {
-    return [ 
+    return [
         lesson3Vocabulary,
         lesson3JijConjugation,
         lesson3HijConjugation,
@@ -45,6 +47,7 @@ export default function lessonList() {
         lesson4ZijConjugation,
         lesson5Vocabulary,
         lesson5Conjugations,
+        //lesson5Sentences,
         lesson6Vocabulary,
         lesson6Conjugations,
         lesson6Articles,
@@ -59,5 +62,7 @@ export default function lessonList() {
         lesson10Vocabulary,
         lesson11Vocabulary,
         lesson12Vocabulary,
+        lesson13Vocabulary,
+        lesson14Vocabulary,
     ]
 }

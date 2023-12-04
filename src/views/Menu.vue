@@ -21,6 +21,7 @@ import { useGreekPracticeStore } from '../stores/practice'
   margin-right: 5px;
   button {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   input {
     margin-top: 10px;

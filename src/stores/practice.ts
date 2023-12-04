@@ -8,14 +8,14 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   //const font: Ref<string> = ref('ubuntu-font')
 
   const conjugationTypes = ['ev_nominatief', 'ev_accusatief', 'ev_genitief', 'ev_datief', 'mv_nominatief', 'mv_accusatief', 'mv_genitief', 'mv_datief']
-  let questions: Ref<Array<any>> = ref([])
-  let currentQuestion: Ref<any> = ref({})
+  const questions: Ref<Array<any>> = ref([])
+  const currentQuestion: Ref<any> = ref({})
 
 
-  let wrongAnswerCount = ref(0)
-  let correctAnswerCount = ref(0)
-  let hintCount = ref(0)
-  let totalCount = ref(0)
+  const wrongAnswerCount = ref(0)
+  const correctAnswerCount = ref(0)
+  const hintCount = ref(0)
+  const totalCount = ref(0)
 
   function startPractice() {
     for (const lesson of useLessonsStore().getActiveLessons()) {
@@ -72,6 +72,8 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     const index = Math.floor(Math.random() * questions.value.length)
     const question = questions.value[index]
     currentQuestion.value = question
+    if (currentQuestion.value.type === 'sentence')
+      currentQuestion.value.mixedQuestions = shuffleArray([...question.correctOptions, ...question.wrongOptions])
     return currentQuestion.value
   }
 
@@ -84,7 +86,8 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   }
 
   function submitAnswer(answer: string) {
-    if (currentQuestion.value.answers.map((answer:string) => answer.toLowerCase()).includes(answer)) {
+    if (currentQuestion.value.type === 'woordenschat' && currentQuestion.value.answers.map((answer:string) => answer.toLowerCase()).includes(answer) ||
+      currentQuestion.value.type === 'sentence' && currentQuestion.value.answers.map((answer:string) => answer.split(' ').join('').toLowerCase()).includes(answer)) {
       correctAnswerCount.value++
       if (useStateStore().options.deleteAfterSuccess === true) {
         questions.value = questions.value.filter((question: any) => question.question !== currentQuestion.value.question)
@@ -94,6 +97,14 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     }
     if (questions.value.length === 0) useStateStore().setState('endScreen')
     getNextRandomQuestion()
+  }
+
+  function shuffleArray(array: Array<string>) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
   }
 
   return { 

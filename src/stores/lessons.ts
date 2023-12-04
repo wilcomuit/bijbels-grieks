@@ -1,6 +1,6 @@
 import { ref, type Ref } from 'vue'
 import { defineStore } from 'pinia'
-import lessonList from './lessons/_lessonList'
+import lessonList from '@/lessons/_lessonList'
 
 export const useLessonsStore = defineStore('lessons', () => {
     const lessons: Ref<Array<LessonType>> = ref(lessonList())
