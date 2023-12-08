@@ -47,7 +47,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
 
           }
         }
-        
+
       } else questions.value = [...questions.value, ...lesson.questions]
     }
     totalCount.value = questions.value.length
@@ -86,7 +86,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   }
 
   function submitAnswer(answer: string) {
-    if (currentQuestion.value.type === 'woordenschat' && currentQuestion.value.answers.map((answer:string) => answer.toLowerCase()).includes(answer) ||
+    if (['vervoeging', 'woordenschat'].includes(currentQuestion.value.type) && currentQuestion.value.answers.map((answer:string) => answer.toLowerCase()).includes(answer) ||
       currentQuestion.value.type === 'sentence' && currentQuestion.value.answers.map((answer:string) => answer.split(' ').join('').toLowerCase()).includes(answer)) {
       correctAnswerCount.value++
       if (useStateStore().options.deleteAfterSuccess === true) {
@@ -107,7 +107,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     return array
   }
 
-  return { 
-    //font, 
+  return {
+    //font,
     questions, totalCount, currentQuestion, wrongAnswerCount, correctAnswerCount, hintCount, addHintCount, startPractice, resetQuestions, getNextRandomQuestion, submitAnswer }
 })
