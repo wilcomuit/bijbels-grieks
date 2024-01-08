@@ -108,18 +108,18 @@ const questions: Array<QuestionType> = [
     },
     {
       question: "εἶ",
-      answers: ["je bent", "u bent"],
+      answers: ["je bent", "jij bent", "u bent"],
       type: "woordenschat"
     },
     {
       question: "ἐστίν",
-      answers: ["is", "hij is", "ze is", "het is"],
+      answers: ["is", "hij is", "ze is", "zij is", "het is"],
       explanation: "(Ook wel: ἐστί)",
       type: "woordenschat"
     },
     {
       question: "ἐσμέν",
-      answers: ["we zijn"],
+      answers: ["we zijn", "wij zijn"],
       type: "woordenschat"
     },
     {
