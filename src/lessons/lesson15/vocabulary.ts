@@ -6,17 +6,17 @@ const questions: Array<QuestionType> = [
     },
     {
         question: "ἦς",
-        answers: ["je was"],
+        answers: ["je was", "jij was"],
         type: "woordenschat"
     },
     {
         question: "ἦσθα",
-        answers: ["je was"],
+        answers: ["je was", "jij was"],
         type: "woordenschat"
     },
     {
         question: "ἦν",
-        answers: ["hij was", "ze was", "het was"],
+        answers: ["hij was", "ze was", "zij was", "het was"],
         type: "woordenschat"
     },
     {
