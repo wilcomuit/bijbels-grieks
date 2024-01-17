@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useGreekPracticeStore } from '@/stores/practice';
+import { useGreekPracticeStore } from '@/stores/practice'
 import { type Ref, ref } from 'vue'
 
 const chosenIndexes: Ref<Array<number>> = ref([])
@@ -26,34 +26,32 @@ const submit = () => {
 </script>
 
 <template>
-
-
-    <div class='answer-outer-container'>
-      <div class='answer-inner-container'>
-        <button class='option-button' v-for='(questionIndex, answerIndex) in chosenIndexes'
-                @click='removeOption(answerIndex)'>
-          {{ useGreekPracticeStore().currentQuestion.mixedQuestions[questionIndex] }}
-        </button>
-      </div>
-      <button class='submit-button' @click='submit()'>></button>
+  <div class="answer-outer-container">
+    <div class="answer-inner-container">
+      <button
+        class="option-button"
+        v-for="(questionIndex, answerIndex) in chosenIndexes"
+        @click="removeOption(answerIndex)"
+      >
+        {{ useGreekPracticeStore().currentQuestion.mixedQuestions[questionIndex] }}
+      </button>
     </div>
+    <button class="submit-button" @click="submit()">></button>
+  </div>
 
-
-
-
-  <div class='option-container'>
-    <button class='option-button' v-for='(answer, index) in useGreekPracticeStore().currentQuestion.mixedQuestions'
-            :disabled='chosenIndexes.includes(index)'
-            @click='addOption(index)'>
+  <div class="option-container">
+    <button
+      class="option-button"
+      v-for="(answer, index) in useGreekPracticeStore().currentQuestion.mixedQuestions"
+      :disabled="chosenIndexes.includes(index)"
+      @click="addOption(index)"
+    >
       {{ answer }}
     </button>
   </div>
-
-
 </template>
 
 <style lang="scss">
-
 .answer-outer-container {
   width: auto;
   margin: auto;
@@ -61,31 +59,25 @@ const submit = () => {
   display: inline-block;
   min-height: 50px;
 
-
   .answer-inner-container {
-
     width: 310px;
     min-height: inherit;
     float: left;
     padding: 4px;
     border: 1px solid black;
-
   }
   .submit-button {
-    float: left ;
+    float: left;
     min-height: inherit;
     border: 1px solid black;
     width: 40px;
     border-left: none;
-
   }
 
   .option-button {
     float: left;
   }
 }
-
-
 
 .option-container {
   margin: 0 auto;
@@ -94,7 +86,7 @@ const submit = () => {
 }
 
 .option-button {
-    margin:5px;
-    border: 1px solid black;
+  margin: 5px;
+  border: 1px solid black;
 }
 </style>

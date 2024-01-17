@@ -1,16 +1,25 @@
 <script setup lang="ts">
-import { useLessonsStore } from '../stores/lessons';
+import { useLessonsStore } from '../stores/lessons'
 import { useGreekPracticeStore } from '../stores/practice'
 </script>
 
 <template>
   <main class="main-menu">
-   <h1>Welkom!</h1>
-   <h3>Selecteer items om te oefenen.</h3>
-   <div v-for="lesson in useLessonsStore().lessons" :key="lesson.id">
-    <input type="checkbox" @change="useLessonsStore().toggleLesson(lesson.id)" :id="'lesson-'+lesson.id"><label :for="'lesson-'+lesson.id" style="margin-left: 5px;">{{ lesson.name }}</label>
-   </div>
-   <button @click="useGreekPracticeStore().startPractice()" :disabled="useLessonsStore().getActiveLessons().length === 0">Start</button>
+    <h1>Welkom!</h1>
+    <h3>Selecteer items om te oefenen.</h3>
+    <div v-for="lesson in useLessonsStore().lessons" :key="lesson.id">
+      <input
+        type="checkbox"
+        @change="useLessonsStore().toggleLesson(lesson.id)"
+        :id="'lesson-' + lesson.id"
+      /><label :for="'lesson-' + lesson.id" style="margin-left: 5px" v-html="lesson.name"></label>
+    </div>
+    <button
+      @click="useGreekPracticeStore().startPractice()"
+      :disabled="useLessonsStore().getActiveLessons().length === 0"
+    >
+      Start
+    </button>
   </main>
 </template>
 
