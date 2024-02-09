@@ -124,7 +124,7 @@ const questions: Array<QuestionType> = [
   },
   {
     question: 'χαίρετε',
-    answers: ['jullie verheugen ons'],
+    answers: ['jullie verheugen zich', 'jullie verheugen je'],
     type: 'woordenschat'
   }
 ]
