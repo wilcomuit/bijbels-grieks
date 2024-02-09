@@ -908,796 +908,634 @@ const questions: Array<QuestionType> = [
     explanation: '(filantroop, filatelist, filologie, filosofie, xenofilie)',
     type: 'woordenschat'
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//===========================================================================================================
-//================================================== TO DO ==================================================
-//===========================================================================================================
   {
-    question: 'ἄγω',
-    answers: ['ik leid', 'ik breng', 'ik ga'],
+    question: 'ηγον',
+    answers: ['ik leidde', 'ik bracht', 'ik ging', 'ze leidden', 'zij leidden', 'ze brachten', 'zij brachten', 'ze gingen', 'zij gingen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπάγω',
-    answers: ['ik leid weg'],
+    question: 'ἀπηγον',
+    answers: ['ik leidde weg', 'ze leidden weg', 'zij leiden weg'],
     type: 'woordenschat'
   },
   {
-    question: 'συνάγω',
-    answers: ['ik breng samen', 'ik verzamel'],
+    question: 'συνηγον',
+    answers: ['ik bracht samen', 'ik verzamelde', 'ze brachten samen', 'zij brachten samen', 'ze verzamelden', 'zij verzamelden'],
     explanation: '(synagoge)',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπάγω',
-    answers: ['ik vertrek'],
-    explanation: '(onovergankelijk)',
+    question: 'ὑπηγον',
+    answers: ['ik vertrok', 'ze vertrokken', 'zij vertrokken'],
     type: 'woordenschat'
   },
   {
-    question: 'φέρω',
-    answers: ['ik draag'],
+    question: 'ἐφέρον',
+    answers: ['ik droeg', 'ze droegen', 'zij droegen'],
     explanation: '(vgl. transfer)',
     type: 'woordenschat'
   },
   {
-    question: 'προσφέρω',
-    answers: ['ik breng', 'ik offer'],
+    question: 'προσἐφέρον',
+    answers: ['ik bracht', 'ik offerde', 'ze brachten', 'zij brachten', 'ze offerden', 'zij offerden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀκούω',
-    answers: ['ik hoor'],
+    question: 'ηκούον',
+    answers: ['ik hoorde', 'ze hoorden', 'zij hoorden'],
     explanation:
       '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπακούω',
-    answers: ['ik gehoorzaam', 'ik luister naar'],
+    question: 'ὑπηκούον',
+    answers: ['ik gehoorzaamde', 'ik luisterde naar', 'ze gehoorzaamden', 'zij gehoorzaamden', 'ze luisterden naar', 'zij luisterden naar'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'ἀναγινώσκω',
-    answers: ['ik lees'],
+    question: 'ἀνἐγινώσκον',
+    answers: ['ik las', 'ze lazen', 'zij lazen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐπιγινώσκω',
-    answers: ['ik herken'],
+    question: 'ἐπἐγινώσκον',
+    answers: ['ik herkende', 'ze herkenden', 'zij herkenden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀποθνῄσκω',
-    answers: ['ik sterf'],
+    question: 'ἀπἐθνῄσκον',
+    answers: ['ik stierf', 'ze stierven', 'zij stierven'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπολύω',
-    answers: ['ik bevrijd'],
+    question: 'ἀπἐλύον',
+    answers: ['ik bevrijdde', 'ze bevrijdden', 'zij bevrijdden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐκβάλλω',
-    answers: ['ik werp uit', 'ik gooi uit', 'ik zend uit'],
+    question: 'ἐξἐβάλλον',
+    answers: ['ik wierp uit', 'ik gooide uit', 'ik zond uit', 'ze wierpen uit', 'zij wierpen uit', 'ze gooiden uit', 'zij gooiden uit', 'ze zonden uit', 'zij zonden uit'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐνδύω',
-    answers: ['ik kleed aan'],
+    question: 'ἐνἐδύον',
+    answers: ['ik kleedde aan', 'ze kleedden aan', 'zij kleedden aan'],
     type: 'woordenschat'
   },
   {
-    question: 'παραλαμβάνω',
-    answers: ['ik ontvang'],
+    question: 'παρἐλαμβάνον',
+    answers: ['ik ontving', 'ze ontving', 'zij ontving'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀνοίγω',
-    answers: ['ik open'],
+    question: 'ηνοίγον',
+    answers: ['ik opende', 'ze openden', 'zij openden'],
     type: 'woordenschat'
   },
   {
-    question: 'διδάσκω',
-    answers: ['ik leer', 'ik onderwijs'],
+    question: 'ἐδιδάσκον',
+    answers: ['ik leerde', 'ik onderwees', 'ze leerden', 'zij leerden', 'ze onderwezen', 'zij onderwezen'],
     type: 'woordenschat'
   },
   {
-    question: 'διώκω',
-    answers: ['ik vervolg'],
+    question: 'ἐδιώκον',
+    answers: ['ik vervolgde', 'ze vervolgden', 'zij vervolgden'],
     type: 'woordenschat'
   },
   {
-    question: 'κλαίω',
-    answers: ['ik ween'],
+    question: 'ἐκλαίον',
+    answers: ['ik weende', 'ze weenden', 'zij weenden'],
     type: 'woordenschat'
   },
   {
-    question: 'πείθω',
-    answers: ['ik overtuig'],
+    question: 'ἐπείθον',
+    answers: ['ik overtuigde', 'ze overtuigden', 'zij overtuigden'],
     type: 'woordenschat'
   },
   {
-    question: 'περισσεύω',
-    answers: ['ik loop over'],
+    question: 'ἐπερισσεύον',
+    answers: ['ik liep over', 'ze liepen over', 'zij liepen over'],
     type: 'woordenschat'
   },
   {
-    question: 'πιστεύω',
-    answers: ['ik geloof'],
+    question: 'ἐπιστεύον',
+    answers: ['ik geloofde', 'ze geloofden', 'zij geloofden'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'προφητεύω',
-    answers: ['ik voorspel', 'ik profeteer'],
+    question: 'ἐπροφητεύον',
+    answers: ['ik voorspelde', 'ik profeteerde', 'ze voorspelden', 'zij voorspelden', 'ze profeteerden', 'zij profeteerden'],
     type: 'woordenschat'
   },
   {
-    question: 'χαίρω',
-    answers: ['ik verheug mij'],
+    question: 'ἐχαίρον',
+    answers: ['ik verheugde mij', 'ze verheugden zich', 'zij verheugden zich'],
     type: 'woordenschat'
   },
   {
-    question: 'ἄγεις',
-    answers: ['jij leidt', 'u leidt', 'jij brengt', 'u brengt', 'jij gaat', 'u gaat'],
-    explanation: '(Onovergankelijk: jij gaat)',
+    question: 'ηγες',
+    answers: ['jij leidde', 'u leidde', 'jij bracht', 'u bracht', 'jij ging', 'u ging'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπάγεις',
-    answers: ['jij leidt weg', 'u leidt weg'],
+    question: 'ἀπηγες',
+    answers: ['jij leidde weg', 'u leidde weg'],
     type: 'woordenschat'
   },
   {
-    question: 'συνάγεις',
-    answers: ['jij brengt samen', 'u brengt samen', 'jij verzamelt', 'u verzamelt'],
+    question: 'συνηγες',
+    answers: ['jij bracht samen', 'u bracht samen', 'jij verzamelde', 'u verzamelde'],
     explanation: '(synagoge)',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπάγεις',
-    answers: ['jij vertrekt', 'u vertrekt'],
-    explanation: '(onovergankelijk)',
+    question: 'ὑπηγες',
+    answers: ['jij vertrok', 'u vertrok'],
     type: 'woordenschat'
   },
   {
-    question: 'φέρεις',
-    answers: ['jij draagt', 'u draagt'],
+    question: 'ἐφέρες',
+    answers: ['jij droeg', 'u droeg'],
     explanation: '(vgl. transfer)',
     type: 'woordenschat'
   },
   {
-    question: 'προσφέρεις',
-    answers: ['jij brengt', 'u brengt', 'jij offert', 'u offert'],
+    question: 'προσἐφέρες',
+    answers: ['jij bracht', 'u bracht', 'jij offerde', 'u offerde'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀκούεις',
-    answers: ['jij hoort', 'u hoort'],
+    question: 'ηκούες',
+    answers: ['jij hoorde', 'u hoorde'],
     explanation:
       '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπακούεις',
-    answers: ['jij gehoorzaamt', 'u gehoorzaamt', 'jij luistert naar', 'u luistert naar'],
+    question: 'ὑπηκούες',
+    answers: ['jij gehoorzaamde', 'u gehoorzaamde', 'jij luisterde naar', 'u luisterde naar'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'ἀναγινώσκεις',
-    answers: ['jij leest', 'u leest'],
+    question: 'ἀνἐγινώσκες',
+    answers: ['jij las', 'u las'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐπιγινώσκεις',
-    answers: ['jij herkent', 'u herkent'],
+    question: 'ἐπἐγινώσκες',
+    answers: ['jij herkende', 'u herkende'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀποθνῄσκεις',
-    answers: ['jij sterft', 'u sterft'],
+    question: 'ἀπἐθνῄσκες',
+    answers: ['jij stierf', 'u stierf'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπολύεις',
-    answers: ['jij bevrijdt', 'u bevrijdt'],
+    question: 'ἀπἐλύες',
+    answers: ['jij bevrijdde', 'u bevrijdde'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐκβάλλεις',
-    answers: ['jij werpt uit', 'u werpt uit', 'jij gooit uit', 'u gooit uit', 'jij zendt uit', 'u zendt uit'],
+    question: 'ἐξἐβάλλες',
+    answers: ['jij wierp uit', 'u wierp uit', 'jij gooide uit', 'u gooide uit', 'jij zond uit', 'u zond uit'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐνδύεις',
-    answers: ['jij kleedt aan', 'u kleedt aan'],
+    question: 'ἐνἐδύες',
+    answers: ['jij kleedde aan', 'u kleedde aan'],
     type: 'woordenschat'
   },
   {
-    question: 'παραλαμβάνεις',
-    answers: ['jij ontvangt', 'u ontvangt'],
+    question: 'παρἐλαμβάνες',
+    answers: ['jij ontving', 'u ontving'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀνοίγεις',
-    answers: ['jij opent', 'u opent'],
+    question: 'ηνοίγες',
+    answers: ['jij opende', 'u opende'],
     type: 'woordenschat'
   },
   {
-    question: 'διδάσκεις',
-    answers: ['jij leert', 'u leert', 'jij onderwijst', 'u onderwijst'],
+    question: 'ἐδιδάσκες',
+    answers: ['jij leerde', 'u leerde', 'jij onderwees', 'u onderwees'],
     type: 'woordenschat'
   },
   {
-    question: 'διώκεις',
-    answers: ['jij vervolgt', 'u vervolgt'],
+    question: 'ἐδιώκες',
+    answers: ['jij vervolgde', 'u vervolgde'],
     type: 'woordenschat'
   },
   {
-    question: 'κλαίεις',
-    answers: ['jij weent', 'u weent'],
+    question: 'ἐκλαίες',
+    answers: ['jij weende', 'u weende'],
     type: 'woordenschat'
   },
   {
-    question: 'πείθεις',
-    answers: ['jij overtuigt', 'u overtuigt'],
+    question: 'ἐπείθες',
+    answers: ['jij overtuigde', 'u overtuigde'],
     type: 'woordenschat'
   },
   {
-    question: 'περισσεύεις',
-    answers: ['jij loopt over', 'u loopt over'],
+    question: 'ἐπερισσεύες',
+    answers: ['jij liep over', 'u liep over'],
     type: 'woordenschat'
   },
   {
-    question: 'πιστεύεις',
-    answers: ['jij gelooft', 'u gelooft'],
+    question: 'ἐπιστεύες',
+    answers: ['jij geloofde', 'u geloofde'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'προφητεύεις',
-    answers: ['jij voorspelt', 'u voorspelt', 'jij profeteert', 'u profeteert'],
+    question: 'ἐπροφητεύες',
+    answers: ['jij voorspelde', 'u voorspelde', 'jij profeteerde', 'u profeteerde'],
     type: 'woordenschat'
   },
   {
-    question: 'χαίρεις',
-    answers: ['jij verheugt je', 'u verheugt zich'],
+    question: 'ἐχαίρες',
+    answers: ['jij verheugde je', 'u verheugde zich'],
     type: 'woordenschat'
   },
   {
-    question: 'ἄγει',
-    answers: ['hij leidt', 'zij leidt', 'het leidt', 'hij brengt', 'zij brengt', 'het brengt', 'hij gaat', 'zij gaat', 'het gaat'],
-    explanation: '(Onovergankelijk: hij gaat)',
+    question: 'ηγε',
+    answers: ['hij leidde', 'zij leidde', 'het leidde', 'hij bracht', 'zij bracht', 'het bracht', 'hij ging', 'zij ging', 'het ging'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπάγει',
-    answers: ['hij leidt weg', 'zij leidt weg', 'het leidt weg'],
+    question: 'ἀπηγε',
+    answers: ['hij leidde weg', 'zij leidde weg', 'het leidde weg'],
     type: 'woordenschat'
   },
   {
-    question: 'συνάγει',
-    answers: ['hij brengt samen', 'zij brengt samen', 'het brengt samen', 'hij brengt weg', 'zij brengt weg', 'het brengt weg', 'hij' +
-    ' verzamelt', 'zij verzamelt', 'het verzamelt'],
+    question: 'συνηγε',
+    answers: ['hij bracht samen', 'zij bracht samen', 'het bracht samen', 'hij verzamelde', 'zij verzamelde', 'het verzamelde'],
     explanation: '(synagoge)',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπάγει',
-    answers: ['hij vertrekt', 'zij vertrekt', 'het vertrekt'],
-    explanation: '(onovergankelijk)',
+    question: 'ὑπηγε',
+    answers: ['hij vertrok', 'zij vertrok', 'het vertrok'],
     type: 'woordenschat'
   },
   {
-    question: 'φέρει',
-    answers: ['hij draagt', 'zij draagt', 'het draagt'],
+    question: 'ἐφέρε',
+    answers: ['hij droeg', 'zij droeg', 'het droeg'],
     explanation: '(vgl. transfer)',
     type: 'woordenschat'
   },
   {
-    question: 'προσφέρει',
-    answers: ['hij brengt', 'zij brengt', 'het brengt', 'hij offert', 'zij offert', 'het offert'],
+    question: 'προσἐφέρε',
+    answers: ['hij bracht', 'zij bracht', 'het bracht', 'hij offerde', 'zij offerde', 'het offerde'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀκούει',
-    answers: ['hij hoort', 'zij hoort', 'het hoort'],
+    question: 'ηκούε',
+    answers: ['hij hoorde', 'zij hoorde', 'het hoorde'],
     explanation:
       '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπακούει',
-    answers: ['hij gehoorzaamt', 'zij gehoorzaamt', 'het gehoorzaamt', 'hij luistert naar', 'zij luistert naar', 'het luistert naar'],
+    question: 'ὑπηκούε',
+    answers: ['hij gehoorzaamde', 'zij gehoorzaamde', 'het gehoorzaamde', 'hij luisterde naar', 'zij luisterde naar', 'het luisterde naar'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'ἀναγινώσκει',
-    answers: ['hij leest', 'zij leest', 'het leest'],
+    question: 'ἀνἐγινώσκε',
+    answers: ['hij las', 'zij las', 'het las'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐπιγινώσκει',
-    answers: ['hij herkent', 'zij herkent', 'het herkent'],
+    question: 'ἐπἐγινώσκε',
+    answers: ['hij herkende', 'zij herkende', 'het herkende'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀποθνῄσκει',
-    answers: ['hij sterft', 'zij sterft', 'het sterft'],
+    question: 'ἀπἐθνῄσκε',
+    answers: ['hij stierf', 'zij stierf', 'het stierf'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπολύει',
-    answers: ['hij bevrijdt', 'zij bevrijdt', 'het bevrijdt'],
+    question: 'ἀπἐλύε',
+    answers: ['hij bevrijdde', 'zij bevrijdde', 'het bevrijdde'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐκβάλλει',
-    answers: ['hij werpt uit', 'zij werpt uit', 'het werpt uit', 'hij gooit uit', 'zij gooit uit', 'het gooit uit', 'hij zendt uit', 'zij zendt uit', ' het zendt uit'],
+    question: 'ἐξἐβάλλε',
+    answers: ['hij wierp uit', 'zij wierp uit', 'het wierp uit', 'hij gooide uit', 'zij gooide uit', 'het gooide uit', 'hij zond uit', 'zij zond uit', ' het zond uit'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐνδύει',
-    answers: ['hij kleedt aan', 'zij kleedt aan', 'het kleedt aan'],
+    question: 'ἐνἐδύε',
+    answers: ['hij kleedde aan', 'zij kleedde aan', 'het kleedde aan'],
     type: 'woordenschat'
   },
   {
-    question: 'παραλαμβάνει',
-    answers: ['hij ontvangt', 'zij ontvangt', 'het ontvangt'],
+    question: 'παρἐλαμβάνε',
+    answers: ['hij ontving', 'zij ontving', 'het ontving'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀνοίγει',
-    answers: ['hij opent', 'zij opent', 'het opent'],
+    question: 'ηνοίγε',
+    answers: ['hij opende', 'zij opende', 'het opende'],
     type: 'woordenschat'
   },
   {
-    question: 'διδάσκει',
-    answers: ['hij leert', 'zij leert', 'het leert', 'hij onderwijst', 'zij onderwijst', 'het onderwijst'],
+    question: 'ἐδιδάσκε',
+    answers: ['hij leerde', 'zij leertde', 'het leerde', 'hij onderwees', 'zij onderwees', 'het onderwees'],
     type: 'woordenschat'
   },
   {
-    question: 'διώκει',
-    answers: ['hij vervolgt', 'zij vervolgt', 'het vervolgt'],
+    question: 'ἐδιώκε',
+    answers: ['hij vervolgde', 'zij vervolgde', 'het vervolgde'],
     type: 'woordenschat'
   },
   {
-    question: 'κλαίει',
-    answers: ['hij weent', 'zij weent', 'het weent'],
+    question: 'ἐκλαίε',
+    answers: ['hij weende', 'zij weende', 'het weende'],
     type: 'woordenschat'
   },
   {
-    question: 'πείθει',
-    answers: ['hij overtuigt', 'zij overtuigt', 'het overtuigt'],
+    question: 'ἐπείθε',
+    answers: ['hij overtuigde', 'zij overtuigde', 'het overtuigde'],
     type: 'woordenschat'
   },
   {
-    question: 'περισσεύει',
-    answers: ['hij loopt over', 'zij loopt over', 'het loopt over'],
+    question: 'ἐπερισσεύε',
+    answers: ['hij liep over', 'zij liep over', 'het liep over'],
     type: 'woordenschat'
   },
   {
-    question: 'πιστεύει',
-    answers: ['hij gelooft', 'zij gelooft', 'het gelooft'],
+    question: 'ἐπιστεύε',
+    answers: ['hij geloofde', 'zij geloofde', 'het geloofde'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'προφητεύει',
-    answers: ['hij voorspelt', 'zij voorspelt', 'het voorspelt', 'hij profeteert', 'zij profeteert', 'het profeteert'],
+    question: 'ἐπροφητεύε',
+    answers: ['hij voorspelde', 'zij voorspelde', 'het voorspelde', 'hij profeteerde', 'zij profeteerde', 'het profeteerde'],
     type: 'woordenschat'
   },
   {
-    question: 'χαίρει',
-    answers: ['hij verheugt zich', 'zij verheugt zich', 'het verheugt zich'],
+    question: 'ἐχαίρε',
+    answers: ['hij verheugde zich', 'zij verheugde zich', 'het verheugde zich'],
     type: 'woordenschat'
   },
   {
-    question: 'ἄγομεν',
-    answers: ['wij leiden', 'wij brengen', 'wij gaan'],
-    explanation: '(Onovergankelijk: wij gaan)',
+    question: 'ηγομεν',
+    answers: ['wij leidden', 'wij brachten', 'wij gingen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπάγομεν',
-    answers: ['wij leiden weg'],
+    question: 'ἀπηγομεν',
+    answers: ['wij leidden weg'],
     type: 'woordenschat'
   },
   {
-    question: 'συνάγομεν',
-    answers: ['wij brengen samen', 'wij verzamelen'],
+    question: 'συνηγομεν',
+    answers: ['wij brachten samen', 'wij verzamelden'],
     explanation: '(synagoge)',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπάγομεν',
-    answers: ['wij vertrekken'],
-    explanation: '(onovergankelijk)',
+    question: 'ὑπηγομεν',
+    answers: ['wij vertrokken'],
     type: 'woordenschat'
   },
   {
-    question: 'φέρομεν',
-    answers: ['wij dragen'],
+    question: 'ἐφέρομεν',
+    answers: ['wij droegen'],
     explanation: '(vgl. transfer)',
     type: 'woordenschat'
   },
   {
-    question: 'προσφέρομεν',
-    answers: ['wij brengen', 'wij offeren'],
+    question: 'προσἐφέρομεν',
+    answers: ['wij brachten', 'wij offerden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀκούομεν',
-    answers: ['wij horen'],
+    question: 'ηκούομεν',
+    answers: ['wij hoorden'],
     explanation:
       '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπακούομεν',
-    answers: ['wij gehoorzamen', 'wij luisteren naar'],
+    question: 'ὑπηκούομεν',
+    answers: ['wij gehoorzaamden', 'wij luisterden naar'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'ἀναγινώσκομεν',
-    answers: ['wij lezen'],
+    question: 'ἀνἐγινώσκομεν',
+    answers: ['wij lazen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐπιγινώσκομεν',
-    answers: ['wij herkennen'],
+    question: 'ἐπἐγινώσκομεν',
+    answers: ['wij herkenden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀποθνῄσκομεν',
-    answers: ['wij sterven'],
+    question: 'ἀπἐθνῄσκομεν',
+    answers: ['wij stierven'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπολύομεν',
-    answers: ['wij bevrijden'],
+    question: 'ἀπἐλύομεν',
+    answers: ['wij bevrijdden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐκβάλλομεν',
-    answers: ['wij werpen uit', 'wij gooien uit', 'wij zenden uit'],
+    question: 'ἐξἐβάλλομεν',
+    answers: ['wij wierpen uit', 'wij gooiden uit', 'wij zonden uit'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐνδύομεν',
-    answers: ['wij kleden aan'],
+    question: 'ἐνἐδύομεν',
+    answers: ['wij kleedden aan'],
     type: 'woordenschat'
   },
   {
-    question: 'παραλαμβάνομεν',
-    answers: ['wij ontvangen'],
+    question: 'παρἐλαμβάνομεν',
+    answers: ['wij ontving'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀνοίγομεν',
-    answers: ['wij openen'],
+    question: 'ηνοίγομεν',
+    answers: ['wij openden'],
     type: 'woordenschat'
   },
   {
-    question: 'διδάσκομεν',
-    answers: ['wij leren', 'wij onderwijzen'],
+    question: 'ἐδιδάσκομεν',
+    answers: ['wij leerden', 'wij onderwezen'],
     type: 'woordenschat'
   },
   {
-    question: 'διώκομεν',
-    answers: ['wij vervolgen'],
+    question: 'ἐδιώκομεν',
+    answers: ['wij vervolgden'],
     type: 'woordenschat'
   },
   {
-    question: 'κλαίομεν',
-    answers: ['wij wenen'],
+    question: 'ἐκλαίομεν',
+    answers: ['wij weenden'],
     type: 'woordenschat'
   },
   {
-    question: 'πείθομεν',
-    answers: ['wij overtuigen'],
+    question: 'ἐπείθομεν',
+    answers: ['wij overtuigden'],
     type: 'woordenschat'
   },
   {
-    question: 'περισσεύομεν',
-    answers: ['wij lopen over'],
+    question: 'ἐπερισσεύομεν',
+    answers: ['wij liepen over'],
     type: 'woordenschat'
   },
   {
-    question: 'πιστεύομεν',
-    answers: ['wij geloven'],
+    question: 'ἐπιστεύομεν',
+    answers: ['wij geloofden'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'προφητεύομεν',
-    answers: ['wij voorspellen', 'wij profeteren'],
+    question: 'ἐπροφητεύομεν',
+    answers: ['wij voorspelden', 'wij profeteerden'],
     type: 'woordenschat'
   },
   {
-    question: 'χαίρομεν',
-    answers: ['wij verheugen ons'],
+    question: 'ἐχαίρομεν',
+    answers: ['wij verheugden ons'],
     type: 'woordenschat'
   },
   {
-    question: 'ἄγετε',
-    answers: ['jullie leiden', 'jullie brengen', 'jullie gaan'],
-    explanation: '(Onovergankelijk: jullie gaan)',
+    question: 'ηγετε',
+    answers: ['jullie leidden', 'jullie brachten', 'jullie gingen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπάγετε',
-    answers: ['jullie leiden weg'],
+    question: 'ἀπηγετε',
+    answers: ['jullie leidden weg'],
     type: 'woordenschat'
   },
   {
-    question: 'συνάγετε',
-    answers: ['jullie brengen samen', 'jullie verzamelen'],
+    question: 'συνηγετε',
+    answers: ['jullie brachten samen', 'jullie verzamelden'],
     explanation: '(synagoge)',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπάγετε',
-    answers: ['jullie vertrekken'],
-    explanation: '(onovergankelijk)',
+    question: 'ὑπηγετε',
+    answers: ['jullie vertrokken'],
     type: 'woordenschat'
   },
   {
-    question: 'φέρετε',
-    answers: ['jullie dragen'],
+    question: 'ἐφέρετε',
+    answers: ['jullie droegen'],
     explanation: '(vgl. transfer)',
     type: 'woordenschat'
   },
   {
-    question: 'προσφέρετε',
-    answers: ['jullie brengen', 'jullie offeren'],
+    question: 'προσἐφέρετε',
+    answers: ['jullie brachten', 'jullie offerden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀκούετε',
-    answers: ['jullie horen'],
+    question: 'ηκούετε',
+    answers: ['jullie hoorden'],
     explanation:
       '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
     type: 'woordenschat'
   },
   {
-    question: 'ὑπακούετε',
-    answers: ['jullie gehoorzamen', 'jullie luisteren naar'],
+    question: 'ὑπηκούετε',
+    answers: ['jullie gehoorzaamden', 'jullie luisterden naar'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'ἀναγινώσκετε',
-    answers: ['jullie lezen'],
+    question: 'ἀνἐγινώσκετε',
+    answers: ['jullie lazen'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐπιγινώσκετε',
-    answers: ['jullie herkennen'],
+    question: 'ἐπἐγινώσκετε',
+    answers: ['jullie herkenden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀποθνῄσκετε',
-    answers: ['jullie sterven'],
+    question: 'ἀπἐθνῄσκετε',
+    answers: ['jullie stierven'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀπολύετε',
-    answers: ['jullie bevrijden'],
+    question: 'ἀπἐλύετε',
+    answers: ['jullie bevrijdden'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐκβάλλετε',
-    answers: ['jullie werpen uit', 'jullie gooien uit', 'jullie zenden uit'],
+    question: 'ἐξἐβάλλετε',
+    answers: ['jullie wierpen uit', 'jullie gooiden uit', 'jullie zonden uit'],
     type: 'woordenschat'
   },
   {
-    question: 'ἐνδύετε',
-    answers: ['jullie kleden aan'],
+    question: 'ἐνἐδύετε',
+    answers: ['jullie kleedden aan'],
     type: 'woordenschat'
   },
   {
-    question: 'παραλαμβάνετε',
-    answers: ['jullie ontvangen'],
+    question: 'παρἐλαμβάνετε',
+    answers: ['jullie ontving'],
     type: 'woordenschat'
   },
   {
-    question: 'ἀνοίγετε',
-    answers: ['jullie openen'],
+    question: 'ηνοίγετε',
+    answers: ['jullie openden'],
     type: 'woordenschat'
   },
   {
-    question: 'διδάσκετε',
-    answers: ['jullie leren', 'jullie onderwijzen'],
+    question: 'ἐδιδάσκετε',
+    answers: ['jullie leerden', 'jullie onderwezen'],
     type: 'woordenschat'
   },
   {
-    question: 'διώκετε',
-    answers: ['jullie vervolgen'],
+    question: 'ἐδιώκετε',
+    answers: ['jullie vervolgden'],
     type: 'woordenschat'
   },
   {
-    question: 'κλαίετε',
-    answers: ['jullie wenen'],
+    question: 'ἐκλαίετε',
+    answers: ['jullie weenden'],
     type: 'woordenschat'
   },
   {
-    question: 'πείθετε',
-    answers: ['jullie overtuigen'],
+    question: 'ἐπείθετε',
+    answers: ['jullie overtuigden'],
     type: 'woordenschat'
   },
   {
-    question: 'περισσεύετε',
-    answers: ['jullie lopen over'],
+    question: 'ἐπερισσεύετε',
+    answers: ['jullie liepen over'],
     type: 'woordenschat'
   },
   {
-    question: 'πιστεύετε',
-    answers: ['jullie geloven'],
+    question: 'ἐπιστεύετε',
+    answers: ['jullie geloofden'],
     explanation: '(+ datief)',
     type: 'woordenschat'
   },
   {
-    question: 'προφητεύετε',
-    answers: ['jullie voorspellen', 'jullie profeteren'],
+    question: 'ἐπροφητεύετε',
+    answers: ['jullie voorspelden', 'jullie profeteerden'],
     type: 'woordenschat'
   },
   {
-    question: 'χαίρετε',
-    answers: ['jullie verheugen ons'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἄγουσιν',
-    answers: ['ze leiden', 'zij leiden', 'ze brengen', 'zij brengen', 'ze gaan', 'zij gaan'],
-    explanation: '(Onovergankelijk: ze gaan)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀπάγουσιν',
-    answers: ['ze leiden weg', 'zij leiden weg'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'συνάγουσιν',
-    answers: ['ze brengen samen', 'zij brengen samen', 'ze verzamelen', 'zij verzamelen'],
-    explanation: '(synagoge)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'ὑπάγουσιν',
-    answers: ['ze vertrekken', 'zij vertrekken'],
-    explanation: '(onovergankelijk)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'φέρουσιν',
-    answers: ['ze dragen', 'zij dragen'],
-    explanation: '(vgl. transfer)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'προσφέρουσιν',
-    answers: ['ze brengen', 'zij brengen', 'ze offeren', 'zij offeren'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀκούουσιν',
-    answers: ['ze horen', 'zij horen'],
-    explanation:
-      '(+ acc. van de zaak die ik hoor, maar + gen. van de persoon die ik hoor (akoestiek))',
-    type: 'woordenschat'
-  },
-  {
-    question: 'ὑπακούουσιν',
-    answers: ['ze gehoorzamen', 'zij gehoorzamen', 'ze luisteren naar', 'zij luisteren naar'],
-    explanation: '(+ datief)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀναγινώσκουσιν',
-    answers: ['ze lezen', 'zij lezen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἐπιγινώσκουσιν',
-    answers: ['ze herkennen', 'zij herkennen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀποθνῄσκουσιν',
-    answers: ['ze sterven', 'zij sterven'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀπολύουσιν',
-    answers: ['ze bevrijden', 'zij bevrijden'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἐκβάλλουσιν',
-    answers: ['ze werpen uit', 'zij werpen uit', 'ze gooien uit', 'zij gooien uit', 'ze zenden uit', 'zij zenden uit'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἐνδύουσιν',
-    answers: ['ze kleden aan', 'zij kleden aan'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'παραλαμβάνουσιν',
-    answers: ['ze ontvangen', 'zij ontvangen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'ἀνοίγουσιν',
-    answers: ['ze openen', 'zij openen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'διδάσκουσιν',
-    answers: ['ze leren', 'zij leren', 'ze onderwijzen', 'zij onderwijzen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'διώκουσιν',
-    answers: ['ze vervolgen', 'zij vervolgen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'κλαίουσιν',
-    answers: ['ze wenen', 'zij wenen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'πείθουσιν',
-    answers: ['ze overtuigen', 'zij overtuigen'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'περισσεύουσιν',
-    answers: ['ze lopen over', 'zij lopen over'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'πιστεύουσιν',
-    answers: ['ze geloven', 'zij geloven'],
-    explanation: '(+ datief)',
-    type: 'woordenschat'
-  },
-  {
-    question: 'προφητεύουσιν',
-    answers: ['ze voorspellen', 'zij voorspellen', 'ze profeteren', 'zij profeteren'],
-    type: 'woordenschat'
-  },
-  {
-    question: 'χαίρουσιν',
-    answers: ['ze verheugen zich', 'zij verheugen zich'],
+    question: 'ἐχαίρετε',
+    answers: ['jullie verheugden zich', 'jullie verheugen je'],
     type: 'woordenschat'
   }
 ]
