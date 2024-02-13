@@ -66,7 +66,7 @@ const questions: Array<QuestionType> = [
   },
   {
     question: 'ἐλεεῖτε',
-    answers: ['jullie ontfermen ons'],
+    answers: ['jullie ontfermen zich'],
     explanation: '(Kyrie eleison)',
     type: 'woordenschat'
   },

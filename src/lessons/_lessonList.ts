@@ -69,6 +69,8 @@ import lesson14WijConjugation from '@/lessons/lesson14/wijConjugation'
 import lesson14JullieConjugation from '@/lessons/lesson14/jullieConjugation'
 import lesson14ZijConjugation from '@/lessons/lesson14/zijConjugation'
 import lesson13OVTConjugation from '@/lessons/lesson13/conjugationsOVT'
+import lesson14OVTConjugation from '@/lessons/lesson14/conjugationsOVT'
+import lesson16Vocabulary from '@/lessons/lesson16/vocabulary'
 export default function lessonList() {
   return [
     // lesson3NewVocabulary,
@@ -141,6 +143,8 @@ export default function lessonList() {
     lesson14WijConjugation,
     lesson14JullieConjugation,
     lesson14ZijConjugation,
+    lesson14OVTConjugation,
     lesson15Vocabulary,
+    lesson16Vocabulary,
   ]
 }
