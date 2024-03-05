@@ -12,7 +12,7 @@ const questions: Array<QuestionType> = [
   },
   {
     question: 'συνάγει',
-    answers: ['hij brengt samen', 'zij brengt samen', 'het brengt samen', 'hij brengt weg', 'zij brengt weg', 'het brengt weg', 'hij' +
+    answers: ['hij brengt samen', 'zij brengt samen', 'het brengt samen', 'hij' +
     ' verzamelt', 'zij verzamelt', 'het verzamelt'],
     explanation: '(synagoge)',
     type: 'woordenschat'

@@ -37,7 +37,7 @@ const questions: Array<QuestionType> = [
   },
   {
     question: 'παρά + dat.',
-    answers: ['blijven bij', 'blijven', 'met'],
+    answers: ['blijven bij', 'bij', 'met'],
     type: 'woordenschat'
   },
   {
@@ -239,7 +239,7 @@ const questions: Array<QuestionType> = [
   },
   {
     question: 'κατ᾽ ἰδίαν',
-    answers: ['privé'],
+    answers: ['privé', 'prive'],
     type: 'woordenschat'
   },
   {
