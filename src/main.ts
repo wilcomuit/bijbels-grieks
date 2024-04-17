@@ -3,6 +3,7 @@ import { createPinia } from 'pinia'
 
 import './assets/sass/style.scss'
 import App from './App.vue'
+import './registerServiceWorker'
 
 const app = createApp(App)
 
