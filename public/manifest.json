@@ -1,7 +1,7 @@
 {
     "name": "Bijbels Grieks",
     "short_name": "Grieks",
-    "manifest_version": 3,
+    "manifest_version": 4,
     "icons": [
         {
             "src": "img/icons/512-512.png",
