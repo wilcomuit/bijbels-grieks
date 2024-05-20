@@ -78,6 +78,7 @@ import lesson18Conjugations from '@/lessons/lesson18/conjugations'
 import lesson19Vocabulary from '@/lessons/lesson19/vocabulary'
 import lesson20Vocabulary from '@/lessons/lesson20/vocabulary'
 import lesson22Vocabulary from '@/lessons/lesson22/vocabulary'
+import lesson23Vocabulary from '@/lessons/lesson23/vocabulary'
 export default function lessonList() {
   return [
     // lesson3NewVocabulary,
@@ -160,5 +161,6 @@ export default function lessonList() {
     lesson19Vocabulary,
     lesson20Vocabulary,
     lesson22Vocabulary,
+    lesson23Vocabulary,
   ]
 }
