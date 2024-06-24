@@ -17,6 +17,9 @@ import { useStateStore } from '../stores/state'
       </h2>
       <h2>Hints getoond: {{ useGreekPracticeStore().hintCount }}</h2>
     </div>
+    <button v-if="useGreekPracticeStore().wrongAnswerCount > 0" class="wrong-answers-button"
+            @click="useStateStore().setState('wrongAnswers')">Fouten inzien</button>
+
     <button class="menu-button" @click="useStateStore().setState('menu')">Terug naar menu</button>
   </main>
 </template>
@@ -24,6 +27,11 @@ import { useStateStore } from '../stores/state'
 <style lang="scss">
 .menu-button {
   margin-top: 20px;
+  margin-left: 5px;
+}
+.wrong-answers-button {
+  margin-top: 20px;
+  margin-left: 5px;
 }
 .end-screen {
   text-align: center;

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useGreekPracticeStore } from '@/stores/practice'
+import { useStateStore } from '@/stores/state'
 
 const emit = defineEmits(['setHideAnswer'])
 const props = defineProps({
@@ -30,10 +31,14 @@ const showAnswer = () => {
     <span style="color: green">{{ useGreekPracticeStore().correctAnswerCount }}</span> /
     {{ useGreekPracticeStore().totalCount }}
   </p>
-  <p>
+  <p @click="useStateStore().setState('wrongAnswers')">
     Foute antwoorden: <span style="color: red">{{ useGreekPracticeStore().wrongAnswerCount }}</span>
   </p>
   <p>Hints getoond: {{ useGreekPracticeStore().hintCount }}</p>
+
+  <button v-if="useGreekPracticeStore().wrongAnswerCount > 0"
+          @click="useGreekPracticeStore().addHintCount(); useStateStore().setState('wrongAnswers')">Fouten inzien</button>
+
 </template>
 
 <style lang="scss">
@@ -54,9 +59,7 @@ const showAnswer = () => {
     width: 350px;
   }
 }
-.menu-button {
-  margin-top: 20px;
-}
+
 .question-font {
   font-family: 'OpenSans';
 }

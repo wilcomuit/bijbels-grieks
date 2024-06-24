@@ -9,6 +9,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   const questions: Ref<Array<any>> = ref([])
   const currentQuestion: Ref<any> = ref({})
 
+  const wrongAnswers: Ref<any> = ref([])
   const wrongAnswerCount = ref(0)
   const correctAnswerCount = ref(0)
   const hintCount = ref(0)
@@ -40,37 +41,6 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
           questions.value.push(question)
         }
       }
-      //
-      // if (lesson.type === 'vervoeging') {
-      //   for (const question of lesson.questions as Array<ConjugationQuestionType>) {
-      //     if (useStateStore().options.allConjugations) {
-      //       const results: Array<any> = []
-      //       for (const [key, value] of Object.entries(question)) {
-      //         if (key === 'type') continue
-      //         const foundResult = results.find((r: any) => r.question === value)
-      //         if (foundResult) foundResult.answers.push(key)
-      //         else results.push({
-      //           question: value,
-      //           answers: [key],
-      //           type: question.type
-      //         })
-      //       }
-      //       questions.value = [...questions.value, ...results]
-      //     } else {
-      //       const conjugationIndex = Math.floor(Math.random() * conjugationTypes.length)
-      //       // @ts-ignore
-      //       const chosenConjugation: string = question[conjugationTypes[conjugationIndex]]
-      //
-      //       questions.value = [...questions.value, {
-      //         question: chosenConjugation,
-      //         answers: getAllConjugationAnswers(question, chosenConjugation),
-      //         type: question.type
-      //       }]
-      //
-      //     }
-      //   }
-      //
-      // } else questions.value = [...questions.value, ...lesson.questions]
     }
     totalCount.value = questions.value.length
     getNextRandomQuestion()
@@ -79,6 +49,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
 
   function resetQuestions() {
     questions.value = []
+    wrongAnswers.value = []
     wrongAnswerCount.value = 0
     correctAnswerCount.value = 0
     hintCount.value = 0
@@ -129,6 +100,13 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
         )
       }
     } else {
+
+      wrongAnswers.value.push({
+        question: currentQuestion.value.question,
+        // @ts-ignore
+        wrongAnswer: answer?.replaceAll('_', ' '),
+        correctAnswer: currentQuestion.value.answers.join(', ')?.replaceAll('_', ' ')
+      })
       wrongAnswerCount.value++
     }
     if (questions.value.length === 0) useStateStore().setState('endScreen')
@@ -149,6 +127,7 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     totalCount,
     currentQuestion,
     wrongAnswerCount,
+    wrongAnswers,
     correctAnswerCount,
     hintCount,
     addHintCount,
