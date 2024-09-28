@@ -81,6 +81,10 @@ import lesson22Vocabulary from '@/lessons/lesson22/vocabulary'
 import lesson23Vocabulary from '@/lessons/lesson23/vocabulary'
 import lesson25Vocabulary from '@/lessons/lesson25/vocabulary'
 import lesson25Aorist2 from '@/lessons/lesson25/aorist2'
+import lesson27Vocabulary from '@/lessons/lesson27/vocabulary'
+import lesson27Aorist2 from '@/lessons/lesson27/aorist2'
+import lesson26Vocabulary from '@/lessons/lesson26/vocabulary'
+import lesson26Aorist2 from '@/lessons/lesson26/aorist2'
 export default function lessonList() {
   return [
     // lesson3NewVocabulary,
@@ -165,6 +169,10 @@ export default function lessonList() {
     lesson22Vocabulary,
     lesson23Vocabulary,
     lesson25Vocabulary,
-    lesson25Aorist2
+    lesson25Aorist2,
+    lesson26Vocabulary,
+    lesson26Aorist2,
+    lesson27Vocabulary,
+    lesson27Aorist2
   ]
 }

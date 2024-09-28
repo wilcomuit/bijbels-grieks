@@ -296,7 +296,7 @@ const questions: Array<QuestionType> = [
     type: 'woordenschat'
   },{
     question: 'ἕως',
-    answers: ['tot aan'],
+    answers: ['tot aan', 'terwijl', 'totdat'],
     explanation: '(is soms een voorzetsel, soms een voegwoord)',
     type: 'woordenschat'
   },{
