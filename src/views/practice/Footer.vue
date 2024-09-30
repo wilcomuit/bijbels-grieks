@@ -31,7 +31,7 @@ const showAnswer = () => {
     <span style="color: green">{{ useGreekPracticeStore().correctAnswerCount }}</span> /
     {{ useGreekPracticeStore().totalCount }}
   </p>
-  <p @click="useStateStore().setState('wrongAnswers')">
+  <p>
     Foute antwoorden: <span style="color: red">{{ useGreekPracticeStore().wrongAnswerCount }}</span>
   </p>
   <p>Hints getoond: {{ useGreekPracticeStore().hintCount }}</p>
