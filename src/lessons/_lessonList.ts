@@ -85,34 +85,10 @@ import lesson27Vocabulary from '@/lessons/lesson27/vocabulary'
 import lesson27Aorist2 from '@/lessons/lesson27/aorist2'
 import lesson26Vocabulary from '@/lessons/lesson26/vocabulary'
 import lesson26Aorist2 from '@/lessons/lesson26/aorist2'
+import lesson28Vocabulary from '@/lessons/lesson28/vocabulary'
+import lesson28Conjugations from '@/lessons/lesson28/conjugations'
 export default function lessonList() {
   return [
-    // lesson3NewVocabulary,
-    // lesson3NewTheory,
-    // lesson4NewVocabulary,
-    // lesson4NewTheory,
-    // lesson5NewVocabulary,
-    // lesson5NewTheory,
-    // lesson6NewVocabulary,
-    // lesson6NewTheory,
-    // lesson7NewVocabulary,
-    // lesson7NewTheory,
-    // lesson8NewVocabulary,
-    // lesson8NewTheory,
-    // lesson9NewVocabulary,
-    // lesson9NewTheory,
-    // lesson10NewVocabulary,
-    // lesson10NewTheory,
-    // lesson11NewVocabulary,
-    // lesson11NewTheory,
-    // lesson12NewVocabulary,
-    // lesson12NewTheory,
-    // lesson13NewVocabulary,
-    // lesson13NewTheory,
-    // lesson14NewVocabulary,
-    // lesson14NewTheory,
-    // lesson15NewVocabulary,
-    // lesson15NewTheory,
     lesson3Vocabulary,
     lesson3JijConjugation,
     lesson3HijConjugation,
@@ -173,6 +149,8 @@ export default function lessonList() {
     lesson26Vocabulary,
     lesson26Aorist2,
     lesson27Vocabulary,
-    lesson27Aorist2
+    lesson27Aorist2,
+    lesson28Vocabulary,
+    lesson28Conjugations,
   ]
 }

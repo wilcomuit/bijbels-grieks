@@ -26,6 +26,12 @@ const showAnswer = () => {
     {{ useGreekPracticeStore().currentQuestion.answers.join(', ') }}
     {{ useGreekPracticeStore().currentQuestion.explanation }}
   </p>
+  <p
+    v-else-if="['vervoeging-woordenschat'].includes(useGreekPracticeStore().currentQuestion.type)"
+    class="answer"
+  >
+    {{ useGreekPracticeStore().currentQuestion.vocabularyAnswers.join(', ') }}
+  </p>
   <p>
     Goede antwoorden:
     <span style="color: green">{{ useGreekPracticeStore().correctAnswerCount }}</span> /

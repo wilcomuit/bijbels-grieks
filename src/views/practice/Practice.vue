@@ -3,6 +3,7 @@ import { ref, computed, type Ref } from 'vue'
 import { useGreekPracticeStore } from '@/stores/practice'
 import { useStateStore } from '@/stores/state'
 import Conjugation from '@/views/questionTypes/Conjugation.vue'
+import ConjugationWithVocabulary from '@/views/questionTypes/ConjugationWithVocabulary.vue'
 import Footer from './Footer.vue'
 import Vocabulary from '@/views/questionTypes/Vocabulary.vue'
 import Sentence from '@/views/questionTypes/Sentence.vue'
@@ -44,6 +45,11 @@ const questionPrefix = computed(() => {
       />
       <Conjugation
         v-if="useGreekPracticeStore().currentQuestion.type === 'vervoeging'"
+        :hide-answer="hideAnswer"
+        @setHideAnswer="(val) => (hideAnswer = val)"
+      />
+      <ConjugationWithVocabulary
+        v-if="useGreekPracticeStore().currentQuestion.type === 'vervoeging-woordenschat'"
         :hide-answer="hideAnswer"
         @setHideAnswer="(val) => (hideAnswer = val)"
       />

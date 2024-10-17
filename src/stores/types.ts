@@ -18,6 +18,7 @@ type QuestionType = {
 type MixedQuestionType = {
   question?: string
   answers?: Array<string>
+  vocabularyAnswers?: Array<string>
   explanation?: string
   ev_nominatief?: string
   ev_accusatief?: string

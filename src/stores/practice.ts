@@ -18,16 +18,17 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
   function startPractice() {
     for (const lesson of useLessonsStore().getActiveLessons()) {
       for (const question of lesson.questions as Array<MixedQuestionType>) {
-        if (question.type === 'vervoeging') {
+        if (question.type === 'vervoeging' || question.type ==='vervoeging-woordenschat') {
           const results: Array<any> = []
           for (const [key, value] of Object.entries(question)) {
-            if (key === 'type') continue
+            if (key === 'type' || key === 'vocabularyAnswers') continue
             const foundResult = results.find((r: any) => r.question === value)
             if (foundResult) foundResult.answers.push(key)
             else
               results.push({
                 question: value,
                 answers: [key],
+                vocabularyAnswers: question.vocabularyAnswers,
                 type: question.type
               })
           }
@@ -70,7 +71,6 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
         ...question.correctOptions,
         ...question.wrongOptions
       ])
-    console.log(currentQuestion)
     return currentQuestion.value
   }
 
@@ -82,12 +82,20 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
     return results
   }
 
-  function submitAnswer(answer: string) {
+  function submitAnswer(answer: string, vocabularyAnswer: string = '') {
     if (
+      (['vervoeging-woordenschat'].includes(currentQuestion.value.type) &&
+        currentQuestion.value.answers
+        .map((answer: string) => answer.toLowerCase())
+        .includes(answer)&& currentQuestion.value.vocabularyAnswers
+        .map((answer: string) => answer.toLowerCase())
+        .includes(vocabularyAnswer))
+      ||
       (['vervoeging', 'woordenschat'].includes(currentQuestion.value.type) &&
         currentQuestion.value.answers
           .map((answer: string) => answer.toLowerCase())
-          .includes(answer)) ||
+          .includes(answer))
+      ||
       (currentQuestion.value.type === 'sentence' &&
         currentQuestion.value.answers
           .map((answer: string) => answer.split(' ').join('').toLowerCase())
@@ -101,12 +109,19 @@ export const useGreekPracticeStore = defineStore('greekPractice', () => {
       }
     } else {
 
-      wrongAnswers.value.push({
+      const tempObject = {
         question: currentQuestion.value.question,
         // @ts-ignore
         wrongAnswer: answer?.replaceAll('_', ' '),
         correctAnswer: currentQuestion.value.answers.join(', ')?.replaceAll('_', ' ')
-      })
+      }
+
+
+      if(currentQuestion.value.type === 'vervoeging-woordenschat') {
+        tempObject.wrongAnswer += `: ${vocabularyAnswer}`
+        tempObject.correctAnswer += `: ${currentQuestion.value.vocabularyAnswers.join(', ')?.replaceAll('_', ' ')}`
+      }
+      wrongAnswers.value.push(tempObject)
       wrongAnswerCount.value++
     }
     if (questions.value.length === 0) useStateStore().setState('endScreen')
