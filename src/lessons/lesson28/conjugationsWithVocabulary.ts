@@ -8,7 +8,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ἀνδρας',
     mv_genitief: 'ἀνδρων',
     mv_datief: 'ἀνδράσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['man', 'echtgenoot'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'ἀστήρ',
@@ -19,7 +20,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ἀστέρας',
     mv_genitief: 'ἀστέρων',
     mv_datief: 'ἀστέρσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['ster'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'μάρτυς',
@@ -30,7 +32,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'μάρτυρας',
     mv_genitief: 'μάρτυρων',
     mv_datief: 'μάρτυρσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['getuige'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'σωτήρ',
@@ -41,7 +44,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'σωτῆρας',
     mv_genitief: 'σωτῆρων',
     mv_datief: 'σωτῆρσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['redder'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'χείρ',
@@ -52,7 +56,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'χειρας',
     mv_genitief: 'χειρων',
     mv_datief: 'χερσίν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['hand'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'γυνή',
@@ -63,7 +68,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'γυναικας',
     mv_genitief: 'γυναικων',
     mv_datief: 'γυναιξιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['vrouw', 'echtgenote'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'σάρξ',
@@ -74,7 +80,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'σαρκας',
     mv_genitief: 'σαρκων',
     mv_datief: 'σαρξιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['vlees'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'ἐλπις',
@@ -85,7 +92,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ἐλπίδας',
     mv_genitief: 'ἐλπίδων',
     mv_datief: 'ἐλπίσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['hoop'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'νύξ',
@@ -96,7 +104,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'νυκτας',
     mv_genitief: 'νυκτων',
     mv_datief: 'νυξιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['nacht'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'παῖς',
@@ -107,7 +116,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'παιδας',
     mv_genitief: 'παιδων',
     mv_datief: 'παισιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['jongen', 'meisje', 'kind', 'dienaar'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'πούς',
@@ -118,7 +128,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ποδας',
     mv_genitief: 'ποδων',
     mv_datief: 'ποσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['voet'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'χάρις',
@@ -129,7 +140,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'χάριτας',
     mv_genitief: 'χάριτων',
     mv_datief: 'χάρισιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['genade'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'αἰών',
@@ -140,7 +152,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'αἰῶνας',
     mv_genitief: 'αἰῶνων',
     mv_datief: 'αἰῶσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['eeuw', 'tijdperk'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'ἀμπελών',
@@ -151,7 +164,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ἀμπελῶνας',
     mv_genitief: 'ἀμπελῶνων',
     mv_datief: 'ἀμπελῶσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['wijngaard'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'εἰκών',
@@ -162,7 +176,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'εἰκόνας',
     mv_genitief: 'εἰκόνων',
     mv_datief: 'εἰκόσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['beeld'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'Ἕλλην',
@@ -173,7 +188,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'Ἕλληνας',
     mv_genitief: 'Ἕλληνων',
     mv_datief: 'Ἕλλησιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['Griek'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'μήν',
@@ -184,7 +200,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'μηνας',
     mv_genitief: 'μηνων',
     mv_datief: 'μησιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['maand'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'Σίμων',
@@ -195,7 +212,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'Σίμωνας',
     mv_genitief: 'Σίμωνων',
     mv_datief: 'Σίμωσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['Simon'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'ἄρχων',
@@ -206,7 +224,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'ἄρχοντας',
     mv_genitief: 'ἄρχοντων',
     mv_datief: 'ἄρχουσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['leider'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'θυγάτηρ',
@@ -217,7 +236,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'θυγατέρας',
     mv_genitief: 'θυγατέρων',
     mv_datief: 'θυγατράσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['dochter'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'μήτηρ',
@@ -228,7 +248,8 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'μητέρας',
     mv_genitief: 'μητέρων',
     mv_datief: 'μητράσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['moeder'],
+    type: 'vervoeging-woordenschat'
   },
   {
     ev_nominatief: 'πατήρ',
@@ -239,15 +260,16 @@ const questions: Array<MixedQuestionType> = [
     mv_accusatief: 'πατέρας',
     mv_genitief: 'πατέρων',
     mv_datief: 'πατράσιν',
-    type: 'vervoeging'
+    vocabularyAnswers: ['vader'],
+    type: 'vervoeging-woordenschat'
   }
 ]
 
-const lesson28Conjugations: LessonType = {
-  id: 'lesson28-conjugations',
-  name: 'Les 28 – Vervoegingen',
-  type: 'vervoeging',
+const lesson28ConjugationsWithVocabulary: LessonType = {
+  id: 'lesson28-conjugations-with-vocabulary',
+  name: 'Les 28 – Vervoegingen met woordenschat',
+  type: 'vervoeging-woordenschat',
   active: false,
   questions
 }
-export default lesson28Conjugations
+export default lesson28ConjugationsWithVocabulary
