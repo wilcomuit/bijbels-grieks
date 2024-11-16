@@ -83,7 +83,7 @@ const questionPrefix = computed(() => {
   margin-top: 20px;
 }
 .question-font {
-  font-family: 'OpenSans';
+  font-family: 'Greek';
 }
 
 .correct-answer {

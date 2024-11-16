@@ -15,7 +15,7 @@ const questions: Array<QuestionType> = [
     type: 'woordenschat'
   },
   {
-    question: 'ἔσμεθα',
+    question: 'ἔσόμεθα',
     answers: ['we zullen zijn', 'wij zullen zijn'],
     type: 'woordenschat'
   },
