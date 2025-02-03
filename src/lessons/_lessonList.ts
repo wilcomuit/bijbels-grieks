@@ -95,6 +95,10 @@ import lesson30Vocabulary from '@/lessons/lesson30/vocabulary'
 import lesson31Vocabulary from '@/lessons/lesson31/vocabulary'
 import lesson31Conjugations from '@/lessons/lesson31/conjugations'
 import lesson31ConjugationsWithVocabulary from '@/lessons/lesson31/conjugationsWithVocabulary'
+import lesson32Vocabulary from '@/lessons/lesson32/vocabulary'
+import lesson32Numbers from '@/lessons/lesson32/numbers'
+import lesson33Vocabulary from '@/lessons/lesson33/vocabulary'
+import lesson34Vocabulary from '@/lessons/lesson34/vocabulary'
 export default function lessonList() {
   return [
     lesson3Vocabulary,
@@ -168,5 +172,9 @@ export default function lessonList() {
     lesson31Vocabulary,
     lesson31Conjugations,
     lesson31ConjugationsWithVocabulary,
+    lesson32Vocabulary,
+    lesson32Numbers,
+    lesson33Vocabulary,
+    lesson34Vocabulary,
   ]
 }
