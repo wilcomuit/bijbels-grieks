@@ -99,6 +99,7 @@ import lesson32Vocabulary from '@/lessons/lesson32/vocabulary'
 import lesson32Numbers from '@/lessons/lesson32/numbers'
 import lesson33Vocabulary from '@/lessons/lesson33/vocabulary'
 import lesson34Vocabulary from '@/lessons/lesson34/vocabulary'
+import lesson35Vocabulary from '@/lessons/lesson35/vocabulary'
 export default function lessonList() {
   return [
     lesson3Vocabulary,
@@ -176,5 +177,6 @@ export default function lessonList() {
     lesson32Numbers,
     lesson33Vocabulary,
     lesson34Vocabulary,
+    lesson35Vocabulary,
   ]
 }
