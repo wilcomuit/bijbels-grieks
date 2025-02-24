@@ -17,12 +17,6 @@ const questions: Array<QuestionType> = [
     type: 'woordenschat'
   },
   {
-    question: 'εἰδώς',
-    answers: ['kennend', 'wetend'],
-    explanation: '(deelwoord)',
-    type: 'woordenschat'
-  },
-  {
     question: 'κάθημαι',
     answers: ['ik zit'],
     explanation: '(vgl. katheder)',
