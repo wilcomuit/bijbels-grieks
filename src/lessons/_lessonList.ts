@@ -105,6 +105,10 @@ import lesson37Vocabulary from '@/lessons/lesson37/vocabulary'
 import lesson38Vocabulary from '@/lessons/lesson38/vocabulary'
 import lesson39Vocabulary from '@/lessons/lesson39/vocabulary'
 import lesson40Vocabulary from '@/lessons/lesson40/vocabulary'
+import lesson41Vocabulary from '@/lessons/lesson41/vocabulary'
+import lesson42Vocabulary from '@/lessons/lesson42/vocabulary'
+import lesson43Vocabulary from '@/lessons/lesson43/vocabulary'
+import lesson44Vocabulary from '@/lessons/lesson44/vocabulary'
 export default function lessonList() {
   return [
     lesson3Vocabulary,
@@ -188,5 +192,9 @@ export default function lessonList() {
     lesson38Vocabulary,
     lesson39Vocabulary,
     lesson40Vocabulary,
+    lesson41Vocabulary,
+    lesson42Vocabulary,
+    lesson43Vocabulary,
+    lesson44Vocabulary
   ]
 }
